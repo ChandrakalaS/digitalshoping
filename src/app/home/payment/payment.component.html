@@ -1,0 +1,17 @@
+<mat-radio-button value="1">Net Banking</mat-radio-button><br/>
+<mat-radio-button value="2">DebitCard</mat-radio-button><br/>
+<mat-radio-button value="3">CreditCard</mat-radio-button><br/>
+<mat-radio-button value="4">Paytm</mat-radio-button><br/>
+<mat-radio-button value="5">UPI</mat-radio-button><br/>
+
+<span style="background-image: url(./assets/captcha.png); padding: 10px 10px 10px 10px">{{captcha}}</span><br/>
+<br/>
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Captcha" input type="text" name="captchaVal" [(ngModel)]="captchaVal">
+  </mat-form-field>
+  <br/>
+
+<button mat-raised-button color="primary" (click)="pay()" [disabled]="captchaVal==null">pay</button>&nbsp;
+
+<button mat-raised-button color="primary" (click)="generateCaptcha()">refresh</button><br/>
+{{errorMsg}}

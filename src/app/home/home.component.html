@@ -1,0 +1,13 @@
+
+<!-- add mattoolbar -->
+<mat-toolbar>
+<span style="color: rgb(98, 29, 209)">DigitalShop</span>&nbsp;
+<span>Welcome:{{userName}}</span>
+<button mat-button class="mattButton" (click)="logout()" style="float: right">Logout</button>
+<button mat-button  (click)="navigateToCart()" style="float: left">Cart</button>
+
+          
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>

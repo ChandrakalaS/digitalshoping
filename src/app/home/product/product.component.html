@@ -1,0 +1,16 @@
+
+ {{count}}
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="search" input type="text" name="searchText" [(ngModel)]="searchText">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="searchProduct()">search</button>
+<mat-card *ngFor="let prod of products">
+<mat-card-title>{{prod.name}}</mat-card-title>
+  {{prod.brand}} <br/>
+  {{prod.name}}<br/>
+  {{prod.category}}<br/>
+  {{prod.price}}<br/>
+  {{prod.rating}}<br/>
+  <button mat-raised-button color="primary"  (click)="addToCart(prod)">AddToCart</button>
+ 
+  </mat-card> 

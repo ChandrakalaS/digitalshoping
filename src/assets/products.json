@@ -1,0 +1,33 @@
+ 
+ {"product":[{
+    "name":"IPhone 7",
+    "brand":"Iphone",
+    "category":"mobile",
+    "description":"",
+    "price":30000,
+    "rating":4.9,
+    "quantity":1
+  },
+ {
+    "name":"Bravia",
+    "brand":"sony",
+    "category":"TV",
+    "description":"",
+    "price":80000,
+    "rating":4.5,
+    "quantity":1
+  },
+   {
+    "name":"Redmi note pro 7",
+    "brand":"Redmi",
+    "category":"mobile",
+    "description":"",
+    "price":20000,
+    "rating":0,
+    "quantity":1
+  }
+  
+  
+
+ ]
+}

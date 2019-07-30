@@ -1,0 +1,17 @@
+<mat-card *ngFor="let cart of cartItems">
+        <mat-card-title>{{cart.name}}</mat-card-title>
+          {{cart.brand}} <br/>
+          {{cart.name}}<br/>
+          {{cart.category}}<br/>
+          {{cart.price}}<br/>
+          {{cart.rating}}<br/>
+          {{cart.quantity}}<br/>
+          <button (click)="remove(cart)">Remove Item</button><br/>
+          <button (click)="increaseQuantity(cart)">+</button>
+          <button (click)="decreaseQuantity(cart)">-</button>
+        
+         </mat-card> 
+         Total amount:<span>{{amount}}</span>
+         
+        
+<button mat-raised-button color="primary" (click)="pay()" style="float: right">Pay</button>

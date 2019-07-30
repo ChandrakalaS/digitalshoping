@@ -1,0 +1,28 @@
+<pre>
+<form method="POST" [formGroup]="registerForm">
+  <!-- name:<input type="text" name="name" [(ngModel)]="user.name" formControlName="name"/> -->
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="name" type="text" name="name" [(ngModel)]="user.name" formControlName="name"/>
+  </mat-form-field>
+  <!-- Email:<input type="text" name="email" [(ngModel)]="user.email" formControlName="email"/> -->
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="email" type="text" name="email" [(ngModel)]="user.email" formControlName="email"/>
+  </mat-form-field>
+ <!-- Mobile:<input type="number" name="mobile" [(ngModel)]="user.mobile" formControlName="mobile"/> -->
+   <mat-form-field class="example-full-width">
+    <input matInput placeholder="number" type="number" name="mobile" [(ngModel)]="user.mobile" formControlName="mobile"/>
+  </mat-form-field>
+<!-- password:<input type="password" name="password" [(ngModel)]="user.password" formControlName="password"/> -->
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="password" type="password" name="password" [(ngModel)]="user.password" formControlName="password"/>
+  </mat-form-field>
+ <!-- ConfirmPass:<input type="password" name="confirmpass" [(ngModel)]="user.confirmpass" formControlName="confirmpass"/> -->
+   <mat-form-field class="example-full-width">
+    <input matInput placeholder="confirmpass" type="password" name="confirmpass" [(ngModel)]="user.confirmpass" formControlName="confirmpass"/>
+  </mat-form-field>
+ <!-- <button (click)="register()" [disabled]="registerForm.invalid">Register</button> -->
+<button mat-raised-button color="primary" (click)="register()" [disabled]="registerForm.invalid">Register</button>&nbsp;&nbsp;
+<button mat-raised-button color="accent">Cancel</button>
+  <!-- <button type="reset">Cancel</button>  -->
+</form>
+</pre>
